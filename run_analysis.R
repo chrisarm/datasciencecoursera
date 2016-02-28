@@ -63,6 +63,4 @@ rm(trainx)
 by_subject_activity <- group_by(allData, subject, activityID) %>% summarize_each(funs(mean),-c(subject,activityID))
 
 #save resulting files
-#saveRDS(by_subject_activity, file="by_subject_activity")
-#saveRDS(allData, file = "allData.RDS")
-write.table(by_subject_activity, file="tidy_by_subject_activity.tbl", row.names = FALSE)
+write.table(by_subject_activity, file="means_by_subject_activity.txt", row.names = FALSE)
