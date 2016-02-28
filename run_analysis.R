@@ -1,5 +1,5 @@
 library(dplyr)
-#setwd("/home/Chris/Documents/GetAndCleanData/UCI HAR Dataset/")
+#setwd("") //Assignment indicated that working directory is set to where data files are located already.
 meanStdRegex <- ".*([mM]ean)|([sS]td).*" # Regular expression for Mean and Std matches when subsetting columns
 
 #read in feature descriptions
